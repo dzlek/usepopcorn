@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 // import "./index.css";
 // import App from "./App";
 import StarRating from "./StarRating";
+import TextExpanderApp from "./TextExpander";
 
 function Test() {
   const [movieRating, setMovieRating] = useState(0);
@@ -31,7 +32,9 @@ root.render(
       maxRating={5}
       messages={["Terrible", "Bad", "Ok", "Good", "Amazing"]}
     />
-    <StarRating maxRating={10} />
+
     <Test />
+
+    <TextExpanderApp />
   </React.StrictMode>
 );
